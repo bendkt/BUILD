@@ -1,7 +1,7 @@
 (function () {
-	var errorMsg = "Cross-origin framing forbidden";
+	var errorMsg = 'Cross-origin framing forbidden';
 	function frameActivate() {
-		var framingControl = document.getElementById("FramingControlStyle");
+		var framingControl = document.getElementById('FramingControlStyle');
 		if (framingControl) {
 			framingControl.parentNode.removeChild(framingControl);
 		}
@@ -15,7 +15,7 @@
 		}
 	}
 	catch (e) {
-		if (console && (typeof console.error === "function")) {
+		if (console && (typeof console.error === 'function')) {
 			console.error(errorMsg);
 		}
 		else {
